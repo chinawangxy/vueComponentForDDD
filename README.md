@@ -1,24 +1,3 @@
-# app
+> 组件 内 不应该存在 与 组件不相关的逻辑
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> 组件内 关于请求数据 可以提出 数据请求模型 位于 页面组件
