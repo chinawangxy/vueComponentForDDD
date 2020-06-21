@@ -52,11 +52,15 @@ class Counter {
   // 逻辑支持
   options(data) {
     const plus = () => {
-      return data.result + 1;
+      const { result } = data;
+
+      return result + 1;
     };
 
     const minus = () => {
-      return data.result - 1;
+      const { result } = data;
+
+      return result - 1;
     };
 
     return { plus, minus };
