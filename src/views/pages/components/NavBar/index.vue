@@ -4,15 +4,18 @@
       v-for="(item, index) in FirstData"
       :key="index"
       :index="index"
+      :curIdx="curIdx"
     />
   </div>
 </template>
 
 <script>
+import { NavItem } from "./NavItem";
 export default {
   name: "NavBar",
   props: {
-    FirstData: Array
+    FirstData: Array,
+    curIdx: Number
   },
   components: {
     NavItem

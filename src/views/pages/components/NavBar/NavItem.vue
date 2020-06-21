@@ -2,10 +2,7 @@
   <div class="nav-item">
     <a
       href="javascript:;"
-      :class="[
-        'nav-lk',
-        { 'nav-current': index === curIdx }
-      ]"
+      :class="['nav-lk', { 'nav-current': index === curIdx }]"
     >
       {{ item.name }}
     </a>
