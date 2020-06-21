@@ -1,24 +1,25 @@
-# app
+## 组件化 思维构建
 
-## Project setup
-```
-npm install
-```
+> [支持] es6 支持模块化 + 数据的双向绑定
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> JS 设计模式 优化项目
 
-### Compiles and minifies for production
-```
-npm run build
-```
+组件 依赖数据 改变 显示内容
 
-### Lints and fixes files
-```
-npm run lint
-```
+组件 内部减少逻辑
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+组件 导入 业务建模，将所有逻辑处理 委托给业务模型
+
+type -> 事件 -> 模型 （-> 调度 -> 逻辑） -> 数据更改
+
+写组件 要从外 往 里 写
+
+组件 页面布局组件 + 内容组件
+
+内容组件 = 组件出口[数据获取] + 子组件[显示]
+
+页面组件 -> 内容组件的容器 [尽量不要写逻辑]
+
+内容组件 -> 数据保存 + 逻辑处理
+
+子组件 -> 视图 数据[从属性获取，方法通过事件传递到内容组件]
